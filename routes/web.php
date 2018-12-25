@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('layouts/master');
 });
 
+Route::get('/posts', 'PostController@index')->name('home');
+Route::get('/causes', 'CauseController@index');
 Route::get('/causes/create', 'CauseController@create');

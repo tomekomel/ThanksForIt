@@ -13,7 +13,7 @@ class CauseController extends Controller
      */
     public function index()
     {
-        //
+        return view('causes.index');
     }
 
     /**
