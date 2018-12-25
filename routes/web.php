@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('/posts', 'PostController@index')->name('home');
 Route::get('/causes', 'CauseController@index');
 Route::get('/causes/create', 'CauseController@create');
+Route::post('/causes', 'CauseController@store');
